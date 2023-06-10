@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { HiLanguage } from 'react-icons/hi2';
 
 import Dropdown from './UI/Dropdown';
 import ThemeToggler from './UI/ThemeToggler';
