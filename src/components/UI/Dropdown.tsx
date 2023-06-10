@@ -21,7 +21,7 @@ const Dropdown: React.FC<IDropdown> = ({ className }) => {
         </button>
 
         {isDropdownOpen && (
-          <div className='absolute right-0 left-auto z-10 bg-white divide-y rounded-lg shadow w-44 dark:bg-gray-600'>
+          <div className='absolute right-0 left-auto z-10 bg-white divide-y rounded-lg shadow w-44 dark:bg-dark-card'>
             <ul className='py-2 text-sm text-gray-700 dark:text-gray-200 font-medium'>
               <li>
                 <Link
