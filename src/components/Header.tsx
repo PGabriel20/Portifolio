@@ -1,11 +1,10 @@
 import Link from 'next/link';
-import { useTheme } from 'next-themes';
+import { HiLanguage } from 'react-icons/hi2';
+
 import Dropdown from './UI/Dropdown';
-import { FiMoon, FiSun } from 'react-icons/fi';
+import ThemeToggler from './UI/ThemeToggler';
 
 const Header: React.FC = () => {
-  const { theme, setTheme } = useTheme();
-
   return (
     <header className='container w-full flex justify-between items-center lg:items-start font-secondary'>
       <div className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-purple-500 to-pink-600'>
@@ -19,15 +18,9 @@ const Header: React.FC = () => {
         <Link href='/'>Projects</Link>
         <Link href='/'>Contact</Link>
       </nav>
-      <div className='flex'>
+      <div className='flex gap-4'>
         <Dropdown className='block lg:hidden' />
-        <button
-          className='hidden lg:block text-2xl cursor-pointer'
-          type='button'
-          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-        >
-          {theme === 'light' ? <FiMoon /> : <FiSun />}
-        </button>
+        <ThemeToggler className='hidden lg:block' />
       </div>
     </header>
   );

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import ClickAwayListener from 'react-click-away-listener';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { UIComponent } from '../../../types/component';
+import ThemeToggler from './ThemeToggler';
 
 type IDropdown = UIComponent;
 
@@ -64,6 +65,9 @@ const Dropdown: React.FC<IDropdown> = ({ className }) => {
                 </Link>
               </li>
             </ul>
+            <div className='py-2 px-4 flex'>
+              <ThemeToggler className='block' />
+            </div>
           </div>
         )}
       </div>
