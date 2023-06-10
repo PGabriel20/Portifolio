@@ -7,7 +7,7 @@ const Header: React.FC = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className='container w-full flex justify-between font-secondary'>
+    <header className='container w-full flex justify-between items-center lg:items-start font-secondary'>
       <div className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-purple-500 to-pink-600'>
         <h1 className='text-2xl'>{'{ PGabriel20 }'}</h1>
         <h3 className='capitalize text-xl'>paulo gabriel</h3>
