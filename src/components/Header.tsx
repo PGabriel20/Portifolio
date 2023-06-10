@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
-import Switch from './UI/Switch';
 import Dropdown from './UI/Dropdown';
+import { FiMoon, FiSun } from 'react-icons/fi';
 
 const Header: React.FC = () => {
   const { theme, setTheme } = useTheme();
@@ -21,11 +21,13 @@ const Header: React.FC = () => {
       </nav>
       <div className='flex'>
         <Dropdown className='block lg:hidden' />
-        <Switch
-          className='hidden lg:block'
-          checked={theme === 'light'}
-          onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-        />
+        <button
+          className='hidden lg:block text-2xl cursor-pointer'
+          type='button'
+          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+        >
+          {theme === 'light' ? <FiMoon /> : <FiSun />}
+        </button>
       </div>
     </header>
   );
