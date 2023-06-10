@@ -42,7 +42,7 @@ const Dropdown: React.FC<IDropdown> = ({ className }) => {
               </li>
               <li>
                 <Link
-                  href='/'
+                  href='/technologies'
                   className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                 >
                   Technologies
@@ -50,7 +50,7 @@ const Dropdown: React.FC<IDropdown> = ({ className }) => {
               </li>
               <li>
                 <Link
-                  href='/'
+                  href='/projects'
                   className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                 >
                   Projects
@@ -58,7 +58,7 @@ const Dropdown: React.FC<IDropdown> = ({ className }) => {
               </li>
               <li>
                 <Link
-                  href='/'
+                  href='/contact'
                   className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                 >
                   Contact
