@@ -13,7 +13,7 @@ const Switch: ForwardRefRenderFunction<HTMLInputElement, ISwitch> = (
 ) => {
   return (
     <div className={`${className}`}>
-      <label className='relative inline-flex items-center mb-4 cursor-pointer'>
+      <label className='relative inline-flex items-center cursor-pointer'>
         <input
           type='checkbox'
           className='sr-only peer'
