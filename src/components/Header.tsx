@@ -12,9 +12,9 @@ const Header: React.FC = () => {
       </div>
       <nav className='hidden lg:flex gap-4 font-bold text-dark-content dark:text-light-content'>
         <Link href='/'>Home</Link>
-        <Link href='/about'>About</Link>
-        <Link href='/tachnologies'>Technologies</Link>
         <Link href='/projects'>Projects</Link>
+        <Link href='/technologies'>Technologies</Link>
+        <Link href='/about'>About</Link>
         <Link href='/contact'>Contact</Link>
       </nav>
       <div className='flex gap-4'>
