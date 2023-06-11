@@ -1,4 +1,4 @@
-import WorkSection from '@/components/WorkSection';
+import Skill from '@/components/Skill';
 
 const About: React.FC = () => {
   return (
@@ -19,26 +19,16 @@ const About: React.FC = () => {
         <h1 className='text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold'>
           Skills
         </h1>
-        <WorkSection
-          title='Languages'
-          company='PHP, Typescript, Javascript'
-          period='Full Time'
-          periodStart='Sep 2022'
+        <Skill title='Languages' description='PHP - Typescript - Javascript' />
+        <Skill
+          title='Back end'
+          description='Laravel - Next.Js - Node.Js - Bull.Js - TRPC - Redis - MySQL - MongoDB'
         />
-        <WorkSection
-          title='Front-end'
-          company='NextJS, ReactJS, VueJS'
-          period='Full Time'
-          periodStart='Sep 2021'
-          periodEnd='Sep 2022'
+        <Skill
+          title='Front end'
+          description=' React.Js - Vue.Js - Livewire - Alpine.Js - Tailwind - ChakraUI - Chart.Js'
         />
-        <WorkSection
-          title='Backend'
-          company='Laravel, NodeJs, NestJs'
-          period='Full Time'
-          periodStart='Jan 2020'
-          periodEnd='Sep 2022'
-        />
+        <Skill title='Infraestructure' description='Mongo Atlas - NGINX - AWS - Vercel' />
       </section>
     </div>
   );

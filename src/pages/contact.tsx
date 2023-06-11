@@ -1,6 +1,6 @@
 const Contact: React.FC = () => {
   return (
-    <div className='flex flex-col gap-2 mt-28 md:mt-32'>
+    <div className='flex flex-col gap-12 mt-28 md:mt-32 max-w-5xl mx-auto'>
       <h1 className='text-center text-2xl md:text-3xl lg:text-3xl text-dark-heading dark:text-light-heading font-semibold md:font-bold'>
         If you&apos;re interested in working on a project together, have any questions, or just want
         to connect.
