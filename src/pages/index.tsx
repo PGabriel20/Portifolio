@@ -45,7 +45,7 @@ export default function Home() {
       </div>
 
       <section className='mt-28 mb-56'>
-        <p className='md:mt-4 text-md lg:text-xl leading-9 md:leading-7'>
+        <p className='md:mt-4 text-md lg:text-xl leading-8 md:leading-7'>
           I&apos;m a full-stack developer with a passion for web development. I love crafting
           engaging front-end experiences, building robust back-end solutions, and exploring
           infrastructure technologies like AWS, Cloudflare and Vercel. Currently studying to become
