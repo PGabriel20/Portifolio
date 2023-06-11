@@ -3,6 +3,13 @@ import Link from 'next/link';
 import Dropdown from './UI/Dropdown';
 import ThemeToggler from './UI/ThemeToggler';
 
+const LINKS = [
+  { title: 'Home', to: '/' },
+  { title: 'Portifolio', to: '/projects' },
+  { title: 'About', to: '/about' },
+  { title: 'Contact', to: '/contact' },
+];
+
 const Header: React.FC = () => {
   return (
     <header className='container w-full flex justify-between items-center lg:items-start font-secondary'>
@@ -11,11 +18,11 @@ const Header: React.FC = () => {
         <h3 className='capitalize text-xl'>paulo gabriel</h3>
       </div>
       <nav className='hidden lg:flex gap-4 font-bold text-dark-content dark:text-light-content'>
-        <Link href='/'>Home</Link>
-        <Link href='/projects'>Projects</Link>
-        <Link href='/technologies'>Technologies</Link>
-        <Link href='/about'>About</Link>
-        <Link href='/contact'>Contact</Link>
+        {LINKS.map((link) => (
+          <Link key={link.title} href={link.to}>
+            {link.title}
+          </Link>
+        ))}
       </nav>
       <div className='flex gap-4'>
         <Dropdown className='block lg:hidden' />

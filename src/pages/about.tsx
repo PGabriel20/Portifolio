@@ -17,24 +17,24 @@ const About: React.FC = () => {
       </article>
       <section className='mt-8'>
         <h1 className='text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold'>
-          Work Experience
+          Skills
         </h1>
         <WorkSection
-          title='junior software developer'
-          company='Reportei'
+          title='Languages'
+          company='PHP, Typescript, Javascript'
           period='Full Time'
           periodStart='Sep 2022'
         />
         <WorkSection
-          title='web development intern'
-          company='Reportei'
+          title='Front-end'
+          company='NextJS, ReactJS, VueJS'
           period='Full Time'
           periodStart='Sep 2021'
           periodEnd='Sep 2022'
         />
         <WorkSection
-          title='web development intern'
-          company='Actual Soluções em Tecnologia'
+          title='Backend'
+          company='Laravel, NodeJs, NestJs'
           period='Full Time'
           periodStart='Jan 2020'
           periodEnd='Sep 2022'
