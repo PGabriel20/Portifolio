@@ -1,14 +1,33 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ClickAwayListener from 'react-click-away-listener';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { UIComponent } from '../../../types/component';
 import ThemeToggler from './ThemeToggler';
+import { useRouter } from 'next/router';
 
 type IDropdown = UIComponent;
 
 const Dropdown: React.FC<IDropdown> = ({ className }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      if (isDropdownOpen) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    router.events.on('routeChangeStart', handleRouteChange);
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method:
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange);
+    };
+  }, [router, isDropdownOpen]);
 
   return (
     <ClickAwayListener onClickAway={() => setIsDropdownOpen(false)}>
