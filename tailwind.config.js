@@ -17,6 +17,7 @@ module.exports = {
         'dark-background': '#191919',
         'dark-card': '#363636',
         'green-text': '#018C0F',
+        'github-link': '#0969da',
         greenbg: '#D7FFE0',
       },
     },

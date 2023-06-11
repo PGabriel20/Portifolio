@@ -5,7 +5,7 @@ import ThemeToggler from './UI/ThemeToggler';
 
 const LINKS = [
   { title: 'Home', to: '/' },
-  { title: 'Portifolio', to: '/projects' },
+  { title: 'Projects', to: '/projects' },
   { title: 'About', to: '/about' },
   { title: 'Contact', to: '/contact' },
 ];
