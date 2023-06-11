@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
           title='This'
           description='My personal portifolio'
           externalLink='/'
-          githubLink='/'
+          githubLink='https://github.com/PGabriel20/Portifolio'
           tech='Typescript'
           techColor='#3178c6'
         />
@@ -23,8 +23,8 @@ const Projects: React.FC = () => {
           title='...'
           description='More projects are comming soon...'
           tech='...'
-          externalLink='/'
-          githubLink='/'
+          externalLink='#'
+          githubLink='#'
         />
       </section>
     </div>
