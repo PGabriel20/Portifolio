@@ -6,12 +6,14 @@ type IThemeToggler = UIComponent;
 
 const ThemeToggler: React.FC<IThemeToggler> = ({ className, ...rest }) => {
   const { theme, setTheme } = useTheme();
+  const nextTheme = theme === 'light' ? 'dark' : 'light';
 
   return (
     <button
-      className={`text-2xl cursor-pointer ${className}`}
+      className={`text-2xl cursor-pointer ${className} hover:scale-[1.02] duration-150 transition ease-in-out delay-150 cursor-pointer`}
+      title={`Toggle ${nextTheme} theme`}
       type='button'
-      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      onClick={() => setTheme(nextTheme)}
       {...rest}
     >
       {theme === 'light' ? <FiMoon /> : <FiSun />}
