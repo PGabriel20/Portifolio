@@ -1,5 +1,4 @@
 import WorkSection from '@/components/WorkSection';
-import { FiBriefcase } from 'react-icons/fi';
 
 const About: React.FC = () => {
   return (

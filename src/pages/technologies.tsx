@@ -9,7 +9,7 @@ const Technologies: React.FC = () => {
           Technologies I have been working with recently
         </p>
       </article>
-      <section></section>
+      <section className='flex'></section>
     </div>
   );
 };

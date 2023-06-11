@@ -7,12 +7,15 @@ const Projects: React.FC = () => {
         My personal projects
       </h1>
       <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10'>
-        <ProjectCard
+        {/* <ProjectCard
           title='This'
           description='My personal portifolio'
           externalLink='/'
           githubLink='/'
-        />
+        /> */}
+        <p className='md:mt-4 text-md lg:text-xl leading-9 md:leading-7'>
+          Nothing to see here yet...
+        </p>
       </section>
     </div>
   );
