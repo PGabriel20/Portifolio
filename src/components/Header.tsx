@@ -1,9 +1,9 @@
 import Link from 'next/link';
-
 import Dropdown from './UI/Dropdown';
 import ThemeToggler from './UI/ThemeToggler';
+import { NavLink } from '../../types/nav-link';
 
-const LINKS = [
+const LINKS: Array<NavLink> = [
   { title: 'Home', to: '/' },
   { title: 'Projects', to: '/projects' },
   { title: 'About', to: '/about' },
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         ))}
       </nav>
       <div className='flex gap-4'>
-        <Dropdown className='block lg:hidden' />
+        <Dropdown links={LINKS} className='block lg:hidden' />
         <ThemeToggler className='hidden lg:block' />
       </div>
     </header>

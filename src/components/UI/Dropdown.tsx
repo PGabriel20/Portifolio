@@ -5,10 +5,13 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import { UIComponent } from '../../../types/component';
 import ThemeToggler from './ThemeToggler';
 import { useRouter } from 'next/router';
+import { NavLink } from '../../../types/nav-link';
 
-type IDropdown = UIComponent;
+interface IDropdown extends UIComponent {
+  links: Array<NavLink>;
+}
 
-const Dropdown: React.FC<IDropdown> = ({ className }) => {
+const Dropdown: React.FC<IDropdown> = ({ links, className }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const router = useRouter();
@@ -43,46 +46,16 @@ const Dropdown: React.FC<IDropdown> = ({ className }) => {
         {isDropdownOpen && (
           <div className='absolute right-0 left-auto z-10 bg-white divide-y rounded-lg shadow w-44 dark:bg-dark-card'>
             <ul className='py-2 text-sm text-gray-700 dark:text-gray-200 font-medium'>
-              <li>
-                <Link
-                  href='/'
-                  className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/about'
-                  className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
-                >
-                  About me
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/technologies'
-                  className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
-                >
-                  Technologies
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/projects'
-                  className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
-                >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/contact'
-                  className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
-                >
-                  Contact
-                </Link>
-              </li>
+              {links.map((link) => (
+                <li key={link.title}>
+                  <Link
+                    href={link.to}
+                    className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                  >
+                    {link.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
             <div className='py-2 px-4 flex'>
               <ThemeToggler className='block' />
