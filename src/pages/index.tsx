@@ -53,14 +53,6 @@ export default function Home() {
           solutions.
         </p>
       </section>
-
-      {/* <hr className='bg-gray-100 border border-solid-heading rounded ' />
-      <footer className='font-secondary w-full flex  text-lg pt-4'>
-        <div className='flex flex-wrap gap-2 sm:gap-8'>
-          <h3 className='mt-4'>bielporreca@gmail.com</h3>
-          <h3 className='mt-4'>+55 (19) 99122 9111</h3>
-        </div>
-      </footer> */}
     </div>
   );
 }
