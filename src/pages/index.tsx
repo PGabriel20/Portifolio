@@ -44,7 +44,7 @@ export default function Home() {
         </section>
       </div>
 
-      <section className='mt-28 mb-56'>
+      <section className='mt-20 md:mt-28 mb-56'>
         <p className='md:mt-4 text-md lg:text-xl leading-7'>
           I&apos;m a full-stack developer with a passion for web development. I love crafting
           engaging front-end experiences, building robust back-end solutions, and exploring
