@@ -10,7 +10,7 @@ interface IDropdown extends HtmlHTMLAttributes<HTMLDivElement> {
   links: Array<NavLink>;
 }
 
-const Dropdown: React.FC<IDropdown> = ({ links, className }) => {
+const Dropdown: React.FC<IDropdown> = ({ links, ...rest }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const router = useRouter();
@@ -33,7 +33,7 @@ const Dropdown: React.FC<IDropdown> = ({ links, className }) => {
 
   return (
     <ClickAwayListener onClickAway={() => setIsDropdownOpen(false)}>
-      <div className={`relative ${className}`}>
+      <div className='relative' {...rest}>
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           className='dark:text-white text-gray-700 text-2xl'
