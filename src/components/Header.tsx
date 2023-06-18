@@ -19,7 +19,11 @@ const Header: React.FC = () => {
       </div>
       <nav className='hidden lg:flex gap-4 font-bold text-dark-content dark:text-light-content'>
         {LINKS.map((link) => (
-          <Link key={link.title} href={link.to}>
+          <Link
+            key={link.title}
+            href={link.to}
+            className='text-dark-heading dark:text-light-heading'
+          >
             {link.title}
           </Link>
         ))}
