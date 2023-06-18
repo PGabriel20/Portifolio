@@ -11,7 +11,7 @@ const Skill: React.FC<ISkill> = ({ title, description }) => {
       </div>
       <div className='flex justify-between pt-2'>
         <div className='flex items-center'>
-          <p className='text-content text-md font-light pl-1'>{description}</p>
+          <p className='text-content text-md font-light'>{description}</p>
         </div>
       </div>
     </article>

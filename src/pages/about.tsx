@@ -21,11 +21,11 @@ const About: React.FC = () => {
         <Skill title='Languages' description='PHP - Typescript - Javascript' />
         <Skill
           title='Back end'
-          description='Laravel - Next.Js - Node.Js - Bull.Js - TRPC - Redis - MySQL - MongoDB'
+          description='Laravel - Node.Js - BullMQ - TRPC - Redis - MySQL - MongoDB'
         />
         <Skill
           title='Front end'
-          description=' React.Js - Vue.Js - Livewire - Alpine.Js - Tailwind - ChakraUI - Chart.Js'
+          description='Next.Js - React.Js - Vue.Js - Livewire - Alpine.Js - Tailwind - ChakraUI - Chart.Js'
         />
         <Skill title='Infraestructure' description='Mongo Atlas - NGINX - AWS - Vercel' />
       </section>
