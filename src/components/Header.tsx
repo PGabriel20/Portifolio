@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Dropdown from './UI/Dropdown';
 import ThemeToggler from './UI/ThemeToggler';
-import { NavLink } from '../../types/nav-link';
+import { NavLink } from '../../types/header';
 
 const LINKS: Array<NavLink> = [
   { title: 'Home', to: '/' },

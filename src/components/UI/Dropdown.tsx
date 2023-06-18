@@ -1,13 +1,12 @@
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { HtmlHTMLAttributes, useEffect, useState } from 'react';
 import ClickAwayListener from 'react-click-away-listener';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { UIComponent } from '../../../types/component';
 import ThemeToggler from './ThemeToggler';
 import { useRouter } from 'next/router';
-import { NavLink } from '../../../types/nav-link';
+import { NavLink } from '../../../types/header';
 
-interface IDropdown extends UIComponent {
+interface IDropdown extends HtmlHTMLAttributes<HTMLDivElement> {
   links: Array<NavLink>;
 }
 

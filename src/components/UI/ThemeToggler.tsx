@@ -1,8 +1,8 @@
 import { useTheme } from 'next-themes';
 import { FiMoon, FiSun } from 'react-icons/fi';
-import { UIComponent } from '../../../types/component';
+import { HtmlHTMLAttributes } from 'react';
 
-type IThemeToggler = UIComponent;
+type IThemeToggler = HtmlHTMLAttributes<HTMLButtonElement>;
 
 const ThemeToggler: React.FC<IThemeToggler> = ({ className, ...rest }) => {
   const { theme, setTheme } = useTheme();
