@@ -35,7 +35,7 @@ export default function Home() {
 
         <section className='w-32 h-32 md:w-64 md:h-64 flex-shrink-0 rounded-full bg-dark-card bg-gradient-to-r from-sky-500 via-purple-500 to-pink-600 p-1'>
           <Image
-            src='https://avatars.githubusercontent.com/u/62361896?v=4'
+            src='/profile.png'
             width={296}
             height={296}
             alt='My picture'
